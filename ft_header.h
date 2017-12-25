@@ -11,6 +11,9 @@
 	int	ft_strlen(char *str);
 	int	isitspace(char c);
 	int	ft_atoi(const char *str);
+	void	ft_ft(int *nbr);
+	void	ft_ultimate_ft(int *********nbr);
+	void	ft_swap(int *a, int *b);
 	void	ft_print_alph_num(char a, char sign, char z);
 	void	ft_is_negetive(int n);
 	void	disp(int *tab, int n);
