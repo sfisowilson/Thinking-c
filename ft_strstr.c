@@ -3,11 +3,9 @@
 
 char 	*ft_strstr(char *str, char *to_find)
 {
-	int i, j, len;
-	char *null;
-	char *ret;
-	
-	null = "\0";
+	int i, j;
+	char *ret = "\0";
+
 	i = j = 0;
 	if (to_find == '\0')
 		return (str);
@@ -20,19 +18,8 @@ char 	*ft_strstr(char *str, char *to_find)
 				j++;
 		}
 		if (to_find[j] == '\0')
-		{
-			len = ft_strlen(str);
-			ret = (char*)malloc(sizeof(char) * (len - i + 1));
-			j = 0;
-			while (str[i] != '\0')
-			{
-				ret[j] = str[i];
-				j++;
-				i++;
-			}
-			return (ret);
-		}
+			return (&str[i]);
 		i++;
 	}
-	return (null);
+	return ret;
 }
