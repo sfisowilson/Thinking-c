@@ -32,4 +32,7 @@
 	int     ft_is_prime(int nb);
 	int     ft_n_queens_puzzle(int n);
 	void    rot_n(int n, char *str);
+	char    *ft_strncpy(char *dest, char *src, unsigned int n);
+	char    *ft_strstr(char *str, char *to_find);
+	int     ft_strcmp(char *s1, char *s2);
 #endif
